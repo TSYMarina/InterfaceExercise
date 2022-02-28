@@ -14,7 +14,7 @@ namespace InterfaceExercise
     public interface IVehicle
     {
         public int NumberOfWheels { get; set; }
-        public int NumberOfPassangers { get; set; }
+        public int NumberOfPassengers { get; set; }
         public bool IsDrivable { get; set; }
         public string Make { get; set; }
     }

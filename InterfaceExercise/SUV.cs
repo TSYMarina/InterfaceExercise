@@ -14,6 +14,13 @@ namespace InterfaceExercise
         public bool IsDrivable { get; set; }
         public string Make { get; set; }
         public string Logo { get; set; }
-        public int YearsInBusiness { get; set; }
+        public int YearCreated { get; set; }
+        public int NumberOfPassengers { get; set; }
+
+        public void PrintSuvInfo()
+        {
+            Console.WriteLine("\n************************\n");
+            Console.WriteLine("Make: " + Make + "\nNumber of Wheels: " + NumberOfWheels + "\nPassenger Capacity: " + NumberOfPassengers + "\nTow kit Available: " + hasTowKit + "\nCurrently Drivable? " + IsDrivable + "\nCompany Logo: " + Logo + "\nCargo Space (cubic meters): " + cargoSize + "\n");
+        }
     }
 }
